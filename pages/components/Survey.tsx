@@ -36,12 +36,12 @@ const Survey: React.FC<SurveyProps> = ({ publisher, heading, description, imageS
   };
 
   return (
-    <div className="bg-white w-3/6 rounded-md shadow-md overflow-hidden flex flex-col sm:flex-row">
+    <div className="bg-white w-full md:max-w-3xl rounded-md shadow-md overflow-hidden flex flex-col sm:flex-row">
       <div className="sm:w-1/2 px-4 py-5 sm:p-6">
         <div className="text-xs font-medium text-gray-500 mb-3">{publisher} &nbsp; | &nbsp; Survey Written</div>
         <div className="flex items-center relative">
           <h1 className="text-3xl font-bold text-gray-900 mb-2 block">{heading}</h1>
-          
+  
           <div className="mt-auto mr-6 absolute top-20">
             <button onClick={handleDropdownClick} className="text-gray-500 flex items-center focus:outline-none">
               <span>{selectedYear}</span>
