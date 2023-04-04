@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#light{
+    background-color:#fff;
+}
+
+#dark{
+    background-color: #202024;
+}
